@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anjali Elastomer — railway elastomer, fastening and infrastructure components engineered for safer, smoother rail networks.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Anjali Elastomer | Engineering the Future of Rail-Roads</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c2b6b'/%3E%3Cpath d='M12 46 28 14h9l15 32h-10l-3-7H26l-3 7H12Zm17-15h7l-3.5-9-3.5 9Z' fill='%23fff'/%3E%3Cpath d='M44 14h7v32h-7z' fill='%23f6a800'/%3E%3C/svg%3E">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { ink:'#071933', blue:'#113b91', royal:'#082a72', orange:'#f5a500', ice:'#eef3f7' },
+        fontFamily: { display:['Manrope','sans-serif'], body:['DM Sans','sans-serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-body text-ink bg-white antialiased selection:bg-orange selection:text-white">
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-brand"><span>ANJALI</span><b>ELASTOMER</b></div>
+    <div class="loader-track"><i></i></div>
+    <small>ENGINEERING RAILWAYS</small>
+  </div>
+
+  <div id="scrollProgress" aria-hidden="true"></div>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header id="siteHeader" class="site-header">
+    <div class="nav-wrap">
+      <a href="#home" class="brand" aria-label="Anjali Elastomer home">
+        <span class="brand-mark">AE</span>
+        <span class="brand-copy"><strong>Anjali</strong><small>ELASTOMER</small></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Home</a>
+
+        <div class="nav-item has-dropdown">
+          <a class="nav-link" href="#about">About Us <span class="nav-chevron">⌄</span></a>
+          <div class="nav-dropdown" aria-label="About Us submenu">
+            <div class="dropdown-intro"><small>About Anjali</small><strong>Railway engineering<br>since 2009.</strong></div>
+            <div class="dropdown-links">
+              <a href="#about"><span>01</span>Our Story</a>
+              <a href="#about"><span>02</span>Capabilities</a>
+              <a href="#about"><span>03</span>Manufacturing</a>
+              <a href="#presence"><span>04</span>National Presence</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a class="nav-link" href="#products">Products <span class="nav-chevron">⌄</span></a>
+          <div class="nav-dropdown wide" aria-label="Products submenu">
+            <div class="dropdown-intro"><small>Railway Components</small><strong>Certified products.<br>Precise performance.</strong></div>
+            <div class="dropdown-links two-col">
+              <a href="#products"><span>01</span>Plate Screws</a>
+              <a href="#products"><span>02</span>Rubber Sole Plates</a>
+              <a href="#products"><span>03</span>Turnout Wedges</a>
+              <a href="#products"><span>04</span>TWS Fittings</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a class="nav-link" href="#presence">Business <span class="nav-chevron">⌄</span></a>
+          <div class="nav-dropdown" aria-label="Business submenu">
+            <div class="dropdown-intro"><small>Our Network</small><strong>Built for rail and<br>metro infrastructure.</strong></div>
+            <div class="dropdown-links">
+              <a href="#presence"><span>01</span>Track Projects</a>
+              <a href="#presence"><span>02</span>Bridge Projects</a>
+              <a href="#presence"><span>03</span>Manufacturing Plants</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a class="nav-link" href="#projects">Projects <span class="nav-chevron">⌄</span></a>
+          <div class="nav-dropdown compact" aria-label="Projects submenu">
+            <div class="dropdown-links">
+              <a href="#projects"><span>01</span>Safe Railway Tracks</a>
+              <a href="#projects"><span>02</span>Rail Elastomers</a>
+              <a href="#projects"><span>03</span>Component Lifecycle</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a class="nav-link" href="#insights">Insights <span class="nav-chevron">⌄</span></a>
+          <div class="nav-dropdown compact align-right" aria-label="Insights submenu">
+            <div class="dropdown-links">
+              <a href="#insights"><span>01</span>Buyer’s Guide</a>
+              <a href="#insights"><span>02</span>Safety & Quality</a>
+              <a href="#insights"><span>03</span>Engineering Guides</a>
+            </div>
+          </div>
+        </div>
+
+        <a class="nav-link" href="#contact">Contact Us</a>
+      </nav>
+
+      <a href="#contact" class="nav-enquire">Enquire <span>↗</span></a>
+      <button id="menuButton" class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu"><i></i><i></i></button>
+    </div>
+
+    <button id="mobileMenuScrim" class="mobile-menu-scrim" type="button" aria-label="Close navigation" tabindex="-1" aria-hidden="true"></button>
+    <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <div class="mobile-menu-meta"><span>Navigation</span><strong>Railway engineering since 2009</strong></div>
+        <a class="mobile-direct" href="#home"><span>01</span>Home</a>
+        <div class="mobile-nav-group">
+          <div><a href="#about" data-mobile-parent aria-haspopup="true" aria-expanded="false"><span>02</span>About Us</a><button type="button" data-mobile-submenu aria-expanded="false" aria-label="Toggle About submenu">+</button></div>
+          <div class="mobile-submenu"><a href="#about">Our Story</a><a href="#about">Capabilities</a><a href="#presence">National Presence</a></div>
+        </div>
+        <div class="mobile-nav-group">
+          <div><a href="#products" data-mobile-parent aria-haspopup="true" aria-expanded="false"><span>03</span>Products</a><button type="button" data-mobile-submenu aria-expanded="false" aria-label="Toggle Products submenu">+</button></div>
+          <div class="mobile-submenu"><a href="#products">Plate Screws</a><a href="#products">Rubber Sole Plates</a><a href="#products">Turnout Wedges</a><a href="#products">TWS Fittings</a></div>
+        </div>
+        <div class="mobile-nav-group">
+          <div><a href="#presence" data-mobile-parent aria-haspopup="true" aria-expanded="false"><span>04</span>Business</a><button type="button" data-mobile-submenu aria-expanded="false" aria-label="Toggle Business submenu">+</button></div>
+          <div class="mobile-submenu"><a href="#presence">Track Projects</a><a href="#presence">Bridge Projects</a><a href="#presence">Manufacturing Plants</a></div>
+        </div>
+        <div class="mobile-nav-group">
+          <div><a href="#projects" data-mobile-parent aria-haspopup="true" aria-expanded="false"><span>05</span>Projects</a><button type="button" data-mobile-submenu aria-expanded="false" aria-label="Toggle Projects submenu">+</button></div>
+          <div class="mobile-submenu"><a href="#projects">Featured Projects</a><a href="#projects">Safety Engineering</a></div>
+        </div>
+        <div class="mobile-nav-group">
+          <div><a href="#insights" data-mobile-parent aria-haspopup="true" aria-expanded="false"><span>06</span>Insights</a><button type="button" data-mobile-submenu aria-expanded="false" aria-label="Toggle Insights submenu">+</button></div>
+          <div class="mobile-submenu"><a href="#insights">Buyer’s Guide</a><a href="#insights">Safety & Quality</a><a href="#insights">Engineering Guides</a></div>
+        </div>
+        <a class="mobile-direct" href="#contact"><span>07</span>Contact</a>
+        <p>Howrah · West Bengal · India</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <video id="heroVideo" class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/video-poster.png" disablepictureinpicture aria-hidden="true">
+        <source src="assets/rail-motion.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay" aria-hidden="true"></div>
+      <div class="hero-video-vignette" aria-hidden="true"></div>
+      <div class="hero-map" aria-hidden="true"></div>
+      <div class="hero-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="hero-content">
+        <div class="hero-copy">
+          <div class="eyebrow hero-intro"><span></span> Precision railway engineering since 2009</div>
+          <h1 class="hero-heading">
+            <span><b>Engineered for</b></span>
+            <span><b>the Future of</b></span>
+            <span class="accent"><b>Rail-Roads</b></span>
+          </h1>
+          <p class="hero-description hero-intro">Premium elastomeric materials, railway fastening systems and infrastructure components—built for safety, stability and long service life.</p>
+          <div class="hero-live hero-intro"><i></i><span>Cinematic railway engineering</span></div>
+          <div class="hero-actions hero-intro">
+            <a class="button-primary" href="#products">Explore Products <span>↗</span></a>
+            <button class="button-secondary" data-open-video>Watch Film <span>▶</span></button>
+          </div>
+        </div>
+
+        <div id="heroVisual" class="hero-visual" aria-label="Modern high-speed train">
+          <div class="hero-model-label"><span>3D</span><small>Interactive<br>rail model</small></div>
+          <div class="train-halo"></div>
+          <img src="assets/hero-train.png" alt="Modern high-speed railway train" fetchpriority="high">
+          <div class="spec-chip chip-one"><span>15+</span><small>Years of<br>engineering</small></div>
+          <div class="spec-chip chip-two"><i></i><small>Railway grade<br>quality systems</small></div>
+          <div class="hero-track" aria-hidden="true"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <span>Railways</span><span>Metro</span><span>Infrastructure</span>
+        <button id="heroVideoToggle" class="hero-video-toggle" type="button" aria-label="Pause background railway video" aria-pressed="false"><i>Ⅱ</i><span>Live rail film</span></button>
+        <a href="#about">Scroll to explore <i></i></a>
+      </div>
+    </section>
+
+    <section id="about" class="about section-pad">
+      <div class="about-visual reveal-left">
+        <figure class="about-photo about-photo-main" data-tilt="4">
+          <img src="assets/about-rail.png" alt="Modern railway coach inside an advanced manufacturing facility" loading="lazy">
+          <figcaption><span>01</span> Advanced railway manufacturing</figcaption>
+        </figure>
+        <figure class="about-photo about-photo-secondary" data-tilt="4">
+          <img src="assets/about-factory.png" alt="Railway coach manufacturing excellence" loading="lazy">
+          <figcaption><span>02</span> Four production facilities</figcaption>
+        </figure>
+        <div class="about-year"><strong>15+</strong><span>Years shaping<br>railway progress</span></div>
+        <div class="image-orbit" aria-hidden="true"><i></i><i></i></div>
+      </div>
+
+      <div class="about-copy reveal-right">
+        <div class="section-kicker">About Us</div>
+        <h2 class="section-heading">Unified in Shaping<br><em>Railway's Future</em></h2>
+        <p class="about-lead">Engineering dependable rail components, manufacturing systems and infrastructure solutions through one integrated vision.</p>
+        <div class="about-grid">
+          <article class="about-point tilt-card">
+            <span>01</span><i>↗</i>
+            <h3>Our Story</h3>
+            <p>Over the previous 15 years, Anjali Elastomer—founded in 2009—has developed from a rail component maker into a trusted supplier of complete railway infrastructure.</p>
+          </article>
+          <article class="about-point tilt-card">
+            <span>02</span><i>↗</i>
+            <h3>Integrated Capabilities</h3>
+            <p>Bridge building, track construction, rail flash-butt welding, turnout systems and fastening solutions are united under one engineering ecosystem.</p>
+          </article>
+          <article class="about-point tilt-card">
+            <span>03</span><i>↗</i>
+            <h3>Manufacturing Excellence</h3>
+            <p>Four advanced plants in Eastern India combine modern technology, repeatable quality and Good Manufacturing Practices.</p>
+          </article>
+          <article class="about-point tilt-card">
+            <span>04</span><i>↗</i>
+            <h3>Key Projects & Achievements</h3>
+            <p>Our experience supports landmark rail links, metro networks, bridges and demanding track environments across India.</p>
+          </article>
+        </div>
+        <a class="line-link" href="#presence">Discover our capabilities <span>↗</span></a>
+      </div>
+    </section>
+
+    <section id="presence" class="presence section-pad">
+      <div class="section-shell">
+        <div class="presence-copy reveal">
+          <div class="section-kicker">Business Network</div>
+          <h2 class="section-heading">Building Pan-India <em>Presence</em></h2>
+          <p>We believe innovation can transform how people and industries connect and prosper. Since our beginning, Anjali Elastomer has helped shape transportation infrastructure through manufacturing excellence, project capability and lasting stakeholder value.</p>
+
+          <div class="map-tabs" role="tablist" aria-label="Business map view">
+            <button class="active" role="tab" aria-selected="true" data-map-tab="tracks">Track Projects</button>
+            <button role="tab" aria-selected="false" data-map-tab="bridges">Bridge Projects</button>
+            <button role="tab" aria-selected="false" data-map-tab="plants">Manufacturing Plants</button>
+          </div>
+
+          <div class="presence-stats">
+            <article><strong data-count="175">0</strong><span>Kms of track<br>projects</span></article>
+            <article><strong data-count="60">0</strong><span>Bridge<br>projects</span></article>
+            <article><strong data-count="15">0</strong><sup>+</sup><span>Years of<br>experience</span></article>
+            <article><strong data-count="4">0</strong><span>Manufacturing<br>plants</span></article>
+          </div>
+        </div>
+
+        <div class="map-stage reveal" data-map-view="tracks" data-tilt="3">
+          <div class="map-glow"></div>
+          <img src="assets/factory-map.gif" alt="Map of India showing Anjali Elastomer business and plant locations" loading="lazy">
+          <div class="map-caption"><i></i><span id="mapCaption">Railway and metro project reach</span></div>
+          <div class="map-coordinate">22.57° N / 88.32° E</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products section-pad">
+      <div class="section-shell">
+        <div class="section-top reveal">
+          <div><div class="section-kicker light">Precision Components</div><h2 class="section-heading light-text">Featured <em>Products</em></h2></div>
+          <p>Railway-grade products designed for consistent load transfer, vibration control, alignment and dependable fastening performance.</p>
+          <div class="section-actions"><div class="autoplay-badge"><i></i> Auto sliding</div><div class="slider-controls"><button data-slider-prev="productTrack" aria-label="Previous product">←</button><button data-slider-next="productTrack" aria-label="Next product">→</button></div></div>
+        </div>
+
+        <div class="slider-viewport reveal">
+          <div id="productTrack" class="product-track drag-track">
+            <article class="product-card">
+              <div class="product-index">01</div>
+              <div class="product-image"><img src="assets/plate-screw.png" alt="Railway plate screw" loading="lazy"><span></span></div>
+              <div class="product-info"><small>RDSO T-3911 to T-3918</small><h3>Plate Screws</h3><p>High-strength fastening for bearing plates, base plates, chairs and rail fittings across demanding track zones.</p><a href="#contact">Explore product <b>↗</b></a></div>
+            </article>
+            <article class="product-card">
+              <div class="product-index">02</div>
+              <div class="product-image cyan"><img src="assets/rail-pad.png" alt="Grooved rubber sole plate" loading="lazy"><span></span></div>
+              <div class="product-info"><small>RDSO RT-5156</small><h3>Grooved Rubber Sole Plate</h3><p>Shock absorption, load distribution, electrical insulation and noise reduction for 60 kg rail assemblies.</p><a href="#contact">Explore product <b>↗</b></a></div>
+            </article>
+            <article class="product-card">
+              <div class="product-index">03</div>
+              <div class="product-image amber"><img src="assets/wedge.png" alt="Railway turnout wedge" loading="lazy"><span></span></div>
+              <div class="product-info"><small>RDSO RT-6305 / A</small><h3>Turnout Wedges</h3><p>Precision-manufactured Thick Web Switch components built for compatibility and reliable performance.</p><a href="#contact">Explore product <b>↗</b></a></div>
+            </article>
+            <article class="product-card">
+              <div class="product-index">04</div>
+              <div class="product-image deep"><img src="assets/tws-fitting.png" alt="TWS fitting system" loading="lazy"><span></span></div>
+              <div class="product-info"><small>RDSO RT-8822</small><h3>TWS Fitting</h3><p>Spring-type track washer engineered to retain bolt tension, absorb vibration and prevent loosening.</p><a href="#contact">Explore product <b>↗</b></a></div>
+            </article>
+          </div>
+        </div>
+        <div class="slider-progress" aria-hidden="true"><span data-slider-progress="productTrack"></span><small>Automatic product showcase</small></div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section-pad">
+      <div class="section-shell">
+        <div class="section-top dark-top reveal">
+          <div><div class="section-kicker">Building the Future</div><h2 class="section-heading">Featured <em>Projects</em></h2></div>
+          <p>Engineering insight from the components and materials that keep modern railway systems safe and resilient.</p>
+          <div class="slider-controls dark-controls"><button data-slider-prev="projectTrack" aria-label="Previous project">←</button><button data-slider-next="projectTrack" aria-label="Next project">→</button></div>
+        </div>
+
+        <div class="slider-viewport project-viewport reveal">
+          <div id="projectTrack" class="project-track drag-track">
+            <article class="project-card">
+              <img src="assets/projects/safe-tracks.jpg" alt="Precision elastomer components for safe railway tracks" loading="lazy">
+              <div class="project-shade"></div><span>01</span>
+              <div><small>Safety & Precision Manufacturing</small><h3>Behind Safe Railway Tracks: Precision Elastomer Components</h3><p>The smallest parts often do the biggest safety work—absorbing shock and controlling vibration every day.</p><a href="#insights">Read project <b>↗</b></a></div>
+            </article>
+            <article class="project-card">
+              <img src="assets/projects/rubber-elastomers.jpg" alt="Natural rubber and synthetic rail elastomers" loading="lazy">
+              <div class="project-shade"></div><span>02</span>
+              <div><small>Materials & Engineering</small><h3>Natural Rubber vs. Synthetic Rail Elastomers</h3><p>A practical comparison of elasticity, resilience and environmental resistance for railway applications.</p><a href="#insights">Read project <b>↗</b></a></div>
+            </article>
+            <article class="project-card">
+              <img src="assets/projects/replace-components.jpg" alt="Railway rubber component inspection" loading="lazy">
+              <div class="project-shade"></div><span>03</span>
+              <div><small>Maintenance & Component Life</small><h3>5 Signs to Replace Railway Rubber Components</h3><p>Cracking, deformation, noise, uneven wear and age are early signals that inspection is due.</p><a href="#insights">Read project <b>↗</b></a></div>
+            </article>
+          </div>
+        </div>
+        <div class="drag-hint"><i></i> Drag or swipe to explore</div>
+      </div>
+    </section>
+
+    <section class="clients section-pad">
+      <video class="clients-video" autoplay muted loop playsinline preload="auto" poster="assets/products-railway-bg.jpg" aria-hidden="true"><source src="assets/rail-motion.mp4" type="video/mp4"></video>
+      <div class="clients-bg" aria-hidden="true"></div>
+      <div class="section-shell clients-panel">
+        <div class="clients-title reveal"><div class="section-kicker light">Our Clientele</div><h2 class="section-heading light-text">Our Trusted <em>Clients</em></h2><p>Supporting railway, metro and infrastructure organisations across national and international networks.</p></div>
+
+        <div class="logo-grid reveal">
+          <article><img src="assets/clients/indian-railways.png" alt="Indian Railways"><span>Indian Railways</span></article>
+          <article><img src="assets/clients/chennai-metro.png" alt="Chennai Metro"><span>Chennai Metro</span></article>
+          <article><img src="assets/clients/rvnl.png" alt="RVNL"><span>RVNL</span></article>
+          <article><img src="assets/clients/delhi-metro.png" alt="Delhi Metro"><span>Delhi Metro</span></article>
+          <article><img src="assets/clients/ircon.png" alt="IRCON"><span>IRCON</span></article>
+          <article><img src="assets/clients/konkan-railway.png" alt="Konkan Railway"><span>Konkan Railway</span></article>
+          <article><img src="assets/clients/srilankan-railway.png" alt="Sri Lankan Railway"><span>Sri Lankan Railway</span></article>
+          <article><img src="assets/clients/mmrda.png" alt="MMRDA"><span>MMRDA</span></article>
+          <article><img src="assets/clients/mumbai-metro.png" alt="Mumbai Metro"><span>Mumbai Metro</span></article>
+          <article><img src="assets/clients/kolkata-metro.png" alt="Kolkata Metro"><span>Kolkata Metro</span></article>
+          <article><img src="assets/clients/afcons.png" alt="Afcons"><span>Afcons</span></article>
+          <article><img src="assets/clients/bangladesh-rail.png" alt="Bangladesh Railway"><span>Bangladesh Rail</span></article>
+          <article><img src="assets/clients/nagpur-metro.png" alt="Nagpur Metro"><span>Nagpur Metro</span></article>
+          <article><img src="assets/clients/gujarat-metro.png" alt="Gujarat Metro"><span>Gujarat Metro</span></article>
+        </div>
+        <div class="clients-live"><i></i><span>Railway network in motion</span><small>14 trusted organisations</small></div>
+      </div>
+    </section>
+
+    <section id="insights" class="insights section-pad">
+      <div class="section-shell">
+        <div class="section-top reveal">
+          <div><div class="section-kicker">Blogs</div><h2 class="section-heading">Featured <em>Articles</em></h2></div>
+          <p>Technical guidance, procurement insight and engineering perspectives for safer, more efficient railways.</p>
+          <div class="section-actions">
+            <div class="autoplay-badge"><i></i> Live insights</div>
+            <div class="slider-controls"><button data-slider-prev="articleTrack" aria-label="Previous article">←</button><button data-slider-next="articleTrack" aria-label="Next article">→</button></div>
+          </div>
+        </div>
+
+        <div class="slider-viewport reveal">
+          <div id="articleTrack" class="article-track drag-track">
+            <article class="article-card"><div class="article-image"><img src="assets/articles/buyers-guide.jpg" alt="Railway rubber components buyer guide" loading="lazy"><b class="article-index">01</b><span>07 min read</span></div><div class="article-info"><div class="article-meta"><small>Procurement</small><time datetime="2026-07-27">Jul 27, 2026</time></div><h3>Railway Rubber Components: A Buyer’s Guide</h3><p>How to evaluate technical suitability, material quality, testing, compliance and lifecycle value.</p><a href="#contact">Read article <b>↗</b></a></div></article>
+            <article class="article-card"><div class="article-image"><img src="assets/articles/quality-elastomers.jpg" alt="Quality railway elastomer products" loading="lazy"><b class="article-index">02</b><span>06 min read</span></div><div class="article-info"><div class="article-meta"><small>Safety</small><time datetime="2026-07-27">Jul 27, 2026</time></div><h3>Quality Elastomers for Safer, Cost-Efficient Railways</h3><p>Why material quality improves shock absorption, load distribution, reliability and lifecycle economics.</p><a href="#contact">Read article <b>↗</b></a></div></article>
+            <article class="article-card"><div class="article-image"><img src="assets/articles/elastomer-guide.jpg" alt="Elastomeric components for railway infrastructure" loading="lazy"><b class="article-index">03</b><span>06 min read</span></div><div class="article-info"><div class="article-meta"><small>Engineering</small><time datetime="2026-07-27">Jul 27, 2026</time></div><h3>A Guide to Elastomeric Components for Railways</h3><p>What elastomeric components are, where they are used and how to evaluate long-term performance.</p><a href="#contact">Read article <b>↗</b></a></div></article>
+          </div>
+        </div>
+        <div class="slider-progress article-progress" aria-hidden="true"><span data-slider-progress="articleTrack"></span><small>Continuous engineering insights</small></div>
+      </div>
+    </section>
+
+    <section class="video-showcase">
+      <img src="assets/video-poster.png" alt="Railway construction and engineering project" loading="lazy">
+      <div class="video-overlay"></div>
+      <div class="video-copy reveal"><div class="section-kicker light">Anjali in Action</div><h2>See Us in <em>Action</em></h2><p>Discover how precision manufacturing and railway engineering shape stronger connections.</p></div>
+      <button class="video-play" data-open-video aria-label="Play Anjali engineering video"><span>▶</span><small>Play video</small></button>
+      <div class="video-scan" aria-hidden="true"></div>
+    </section>
+
+    <section id="contact" class="contact-band">
+      <div class="section-shell contact-inner reveal">
+        <div><small>Have a railway project?</small><h2>Let’s engineer the<br><em>right solution.</em></h2></div>
+        <div><p>Share your performance requirement, product specification or supply programme with our team.</p><a href="mailto:sales@anjalielastomer.com">sales@anjalielastomer.com <span>↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top section-shell">
+      <div class="footer-brand"><a href="#home" class="brand"><span class="brand-mark">AE</span><span class="brand-copy"><strong>Anjali</strong><small>ELASTOMER</small></span></a><p>Leading manufacturer of premium elastomeric materials and fastening components for railway construction worldwide.</p></div>
+      <div><h3>Products</h3><a href="#products">Rubber Pads</a><a href="#products">Fastening Systems</a><a href="#products">Turnout Components</a><a href="#products">Custom Solutions</a></div>
+      <div><h3>Company</h3><a href="#about">About Us</a><a href="#projects">Projects</a><a href="#presence">Business</a><a href="#insights">Insights</a></div>
+      <div><h3>Contact</h3><a href="tel:+919681187076">+91 9681187076</a><a href="tel:+919038156288">+91 9038156288</a><a href="mailto:sales@anjalielastomer.com">sales@anjalielastomer.com</a><span>Howrah, West Bengal, India</span></div>
+    </div>
+    <div class="footer-news"><div class="section-shell"><p>Stay informed about railway engineering, product innovation and industry news.</p><a href="mailto:sales@anjalielastomer.com?subject=Newsletter%20Subscription">Subscribe for updates <span>↗</span></a></div></div>
+    <div class="footer-bottom section-shell"><p>© <span id="year"></span> Anjali Elastomer Ltd. All rights reserved.</p><p>Precision engineered in India</p><a href="#home">Back to top ↑</a></div>
+  </footer>
+
+  <div id="videoModal" class="video-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Anjali engineering film">
+    <button id="closeVideo" aria-label="Close video">×</button>
+    <div class="modal-frame"><video id="modalVideo" controls playsinline preload="metadata" poster="assets/video-poster.png"><source src="assets/rail-motion.mp4" type="video/mp4"></video><div><span>ANJALI IN ACTION</span><p>Railway engineering in motion</p></div></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
